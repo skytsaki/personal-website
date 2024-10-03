@@ -44,3 +44,9 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.profile-photo {
+    width: 300px; /* Задаємо ширину зображення */
+    height: auto; /* Зберігаємо пропорції */
+}
+
