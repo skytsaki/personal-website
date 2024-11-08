@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація користувача</title>
+    <link rel="stylesheet" href="../styles.css"> <!-- Підключення CSS -->
+</head>
+<body>
+
+<header>
+    <h1>Реєстрація користувача</h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Головна</a></li>
+            <li><a href="../labs.html">Лабораторні роботи</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="registration-form">
+        <h2>Форма для реєстрації</h2>
+        <form action="https://webhook.site/your-unique-url" method="POST">
+            <!-- Ім'я -->
+            <label for="first-name">Ім'я:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <!-- Прізвище -->
+            <label for="last-name">Прізвище:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <!-- Електронна пошта -->
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Пароль -->
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Підтвердження паролю -->
+            <label for="confirm-password">Підтвердіть пароль:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <!-- Дата народження -->
+            <label for="dob">Дата народження:</label>
+            <input type="date" id="dob" name="dob">
+
+            <!-- Стать -->
+            <label for="gender">Стать:</label>
+            <select id="gender" name="gender">
+                <option value="male">Чоловік</option>
+                <option value="female">Жінка</option>
+                <option value="other">Інша</option>
+            </select>
+
+            <!-- Надіслати -->
+            <input type="submit" value="Зареєструватися">
+        </form>
+    </section>
+</main>
+
+<footer>
+</footer>
+
+</body>
+</html>
